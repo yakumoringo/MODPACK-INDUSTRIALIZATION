@@ -36,7 +36,7 @@
 	enableOverstressedTooltip = true
 	# 
 	#Use modern OpenGL features to drastically increase performance.
-	experimentalRendering = false
+	experimentalRendering = true
 	# 
 	#Offset the Create config button in the in-game menu by this many pixels on the X axis
 	#The sign (-/+) of this value determines what side of the row the button appears on (left/right)
