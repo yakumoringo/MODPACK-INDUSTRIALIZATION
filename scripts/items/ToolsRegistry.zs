@@ -15,7 +15,7 @@ for material in I{
     var temp as string[][] = material;
     for ty in temp[6]{
         new ItemBuilder()
-            .withItemGroup(<itemGroup:${CreativeTabs.TAB_GENERAL}>)
+            .withItemGroup(<itemGroup:${CreativeTabs.TAB_TOOLS}>)
             .withMaxDamage(temp[1][0])
             .withType<ItemBuilderTool>()
             .withAttackDamage(temp[2][0])

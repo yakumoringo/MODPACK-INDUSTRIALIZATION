@@ -17,6 +17,21 @@ TYPES OF TOOLS
 - <tooltype:paxel>
 - <tooltype:hoe>
 */
+/*
+hammer - 锤子
+smith_hammer - 锻造锤
+soft_hammer = 软锤
+plane = 刨子
+chisel = 凿子
+knife = 小刀
+
+
+*/
+
+
+
+
+
 import crafttweaker.api.data.StringData;
 
 
@@ -37,12 +52,23 @@ public class MaterialTool{
     ],
     [
         ["pebble_sharp"],//工具前缀（名称） 0 
-        ["32"],//耐久值 1 cast int
+        ["48"],//耐久值 1 cast int
         ["0.5"],//附加的攻击力 2 cast float
         ["0.50"],//Additional ATK SPD 3 cast double
         ["1"],//Duration cost when ATK 4 cast int
         ["1"],//Duration cost when Mining 5 cast int
-        ["chisel","plane"],//Types of Tool that applies 6 cast IToolType
+        ["axe","shovel","hammer","chisel","plane","knife"],//Types of Tool that applies 6 cast IToolType
+        ["1"],//Mining Level 7 cast int
+        ["1.0"]//Mining SPD 8 cast float
+    ],
+        [
+        ["wood"],//工具前缀（名称） 0 
+        ["16"],//耐久值 1 cast int
+        ["0.5"],//附加的攻击力 2 cast float
+        ["0.50"],//Additional ATK SPD 3 cast double
+        ["1"],//Duration cost when ATK 4 cast int
+        ["1"],//Duration cost when Mining 5 cast int
+        ["soft_hammer","hammer"],//Types of Tool that applies 6 cast IToolType
         ["1"],//Mining Level 7 cast int
         ["1.0"]//Mining SPD 8 cast float
     ]

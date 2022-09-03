@@ -12,7 +12,8 @@ public class NormalItemRegistry{
         "fibber_string",
         "carpenter_part",
         "carpenter_frame",
-        "pebble_sharp"
+        "pebble_sharp",
+        "resin"
     ];
 }
 
