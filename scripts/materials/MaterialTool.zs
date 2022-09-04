@@ -28,12 +28,7 @@ knife = 小刀
 
 */
 
-
-
-
-
 import crafttweaker.api.data.StringData;
-
 
 public class MaterialTool{
     /*
@@ -72,10 +67,5 @@ public class MaterialTool{
         ["1"],//Mining Level 7 cast int
         ["1.0"]//Mining SPD 8 cast float
     ]
-
-
-
-
-
 ];
 }
