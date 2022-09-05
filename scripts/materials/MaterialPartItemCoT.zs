@@ -7,27 +7,24 @@ import mods.contenttweaker.item.advance.CoTItemAdvanced;
 import mods.contenttweaker.functions.IItemColorSupplier;
 import mods.contenttweaker.item.advance.ItemBuilderAdvanced;
 import mods.contenttweaker.item.advance.CoTItemAdvanced;
-import mods.contenttweaker.functions.IItemColorSupplier;
-import crafttweaker.api.item.ItemStack;
-import crafttweaker.api.item.IItemStack;
-import crafttweaker.api.data.INumberData;
-import crafttweaker.api.data.StringData;
-import mods.contenttweaker.BracketHandlers;
-import crafttweaker.api.item.ItemGroup;
-import crafttweaker.api.BracketHandlers;
 
-public class Material{
+
+
+public class MaterialPartItem{
     //内置属性
-    public var MATERIAL as string;
-    public var HEXCOLOR as int;
-    public var TAB as string = CreativeTabs.TAB_DEBUG;
+    var MATERIAL as string;
+    var HEXCOLOR as int;
+    var TAB as string = CreativeTabs.TAB_PARTS;
+
+    var PARTLIST as string[] = InterfacePartList.PARTLIST;
+    var TAGLIST as string[] = InterfacePartList.PARTLIST;
 
 
     //setter 有PUBLIC的才可以被外部访问
-    public setColor(c as int) as void{
+    setColor(c as int) as void{
         this.HEXCOLOR = c;
     }
-    public setMaterial(m as string)as void{
+    setMaterial(m as string)as void{
         this.MATERIAL = m;
     }
 
@@ -39,20 +36,25 @@ public class Material{
         return this.MATERIAL;
     }
     //方法
-    public build() as void {
-        var regname = "material_"+this.MATERIAL;
-        new ItemBuilder()
-            .withItemGroup(<itemGroup:${this.TAB}>)
-            .withType<ItemBuilderAdvanced>()
-            .build(regname);
+    buildMaterialPartItem() as void {
+        for i in this.PARTLIST{
+            var regname = this.MATERIAL + "_" + i;
+        
+            new ItemBuilder()
+                .withItemGroup(<itemGroup:${this.TAB}>)
+                .withType<ItemBuilderAdvanced>()
+                .build(regname);
+        }
     }
-
-
-
+    public build() as void{
+        this.buildMaterialPartItem();
+    }
     //构造函数
     public this(MATERIAL as string,c as int){
         this.setMaterial(MATERIAL);
         this.setColor(c);
     }
 }
+
+
 

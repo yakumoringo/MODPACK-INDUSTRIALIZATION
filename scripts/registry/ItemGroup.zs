@@ -1,5 +1,5 @@
 #loader contenttweaker
-#priority 9000
+#priority 2000
 
 import mods.contenttweaker.functions.IIconSupplier;
 import crafttweaker.api.item.ItemGroup;
