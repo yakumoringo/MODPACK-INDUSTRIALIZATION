@@ -12,7 +12,6 @@ import crafttweaker.api.BracketHandlers;
 public expand string{
     public implicit as IItemStack =>
         BracketHandlers.getItem(this);
-
     public implicit as int{
         return this as int;
     }
