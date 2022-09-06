@@ -1,6 +1,8 @@
 {
     "itemGroup.industrialization_general":"工业化：总体",
     "itemGroup.industrialization_tools":"工业化：工具",
+    "itemGroup.industrialization_debug":"工业化：调试",
+    "itemGroup.industrialization_parts":"工业化：零件",
     "item.contenttweaker.fibber":"纤维",
     "item.contenttweaker.fibber_string":"纤维绳",
     "item.contenttweaker.test_rod":"测试工具"
