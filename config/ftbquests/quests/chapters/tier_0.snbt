@@ -1,0 +1,369 @@
+{
+	id: "752B7699F44B89B0"
+	group: "0F8949D450BB3305"
+	order_index: 0
+	filename: "tier_0"
+	title: "tier 0 : 人类一败涂地"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "欢迎来到虚无之地！"
+			icon: "minecraft:end_crystal"
+			x: 0.0d
+			y: 1.5d
+			shape: "square"
+			subtitle: "一生二，二生三，三生万物"
+			description: [
+				"你好，亲爱的朋友！你现在如何？"
+				"有没有对这里的一切而感到诧异？"
+				"不用惊慌，根据合约，这就是你以后工作的地方！"
+				"赞美伟大的科学（玄学），"
+				"能创造一个利用人的思维来产生能源的神奇方式"
+				"但是这种方式过于抽象，我们往往会采用引导思维的方式来降低生产能源的难度"
+				"公司的终极目标是生产足够的PE-BOX"
+				"然后卖给全世界，这是每一个公司员工都应该知道的"
+				"不过很少有员工真正生产出完整PE-BOX……"
+				"希望你能够如期完成任务吧~我最有潜力的新员工！"
+			]
+			id: "69627DCE59A3D0BA"
+			tasks: [{
+				id: "3CB08937E3B335F5"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "066BDC3AC2E2B9A7"
+				type: "gamestage"
+				auto: "invisible"
+				stage: ""
+			}]
+		}
+		{
+			x: 1.5d
+			y: 0.5d
+			dependencies: ["69627DCE59A3D0BA"]
+			id: "3CD75AF3C52F68C4"
+			tasks: [{
+				id: "0A960DDE34A36842"
+				type: "item"
+				item: "botania:pebble"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 1.5d
+			dependencies: ["69627DCE59A3D0BA"]
+			id: "3C91C3BC140187FA"
+			tasks: [{
+				id: "229408290D5A889F"
+				type: "item"
+				item: "minecraft:oak_sapling"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 1.5d
+			dependencies: ["3C91C3BC140187FA"]
+			id: "0F1DD23BBC48037B"
+			tasks: [{
+				id: "1197F2031B811862"
+				type: "item"
+				item: "contenttweaker:fibber"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 2.5d
+			dependencies: ["0F1DD23BBC48037B"]
+			id: "194848C5E3A8DF63"
+			tasks: [{
+				id: "05DD98DC4679433E"
+				type: "item"
+				item: "contenttweaker:fibber_string"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 3.0d
+			dependencies: ["3C91C3BC140187FA"]
+			id: "00F3FB433692D36E"
+			tasks: [{
+				id: "088C53B3C998D40B"
+				type: "checkmark"
+			}]
+		}
+		{
+			disable_toast: true
+			x: 3.0d
+			y: 4.0d
+			dependencies: ["3C91C3BC140187FA"]
+			id: "24738CFB365847ED"
+			tasks: [{
+				id: "424656A848085AED"
+				type: "item"
+				item: "minecraft:stick"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 5.5d
+			dependencies: ["3C91C3BC140187FA"]
+			id: "5052A88D733C2C73"
+			tasks: [{
+				id: "3451503258751F7B"
+				type: "item"
+				item: "minecraft:oak_log"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -1.5d
+			dependencies: ["3CD75AF3C52F68C4"]
+			id: "751A61806E057E2A"
+			tasks: [{
+				id: "2120B4CCC29EC80F"
+				type: "item"
+				item: "contenttweaker:pebble_sharp"
+			}]
+		}
+		{
+			title: "制作简易工具"
+			x: 4.5d
+			y: 0.5d
+			dependencies: [
+				"24738CFB365847ED"
+				"194848C5E3A8DF63"
+				"3CD75AF3C52F68C4"
+			]
+			id: "415CA1D6E735FEC3"
+			tasks: [{
+				id: "16C69EC41D3F2F27"
+				type: "checkmark"
+			}]
+		}
+		{
+			x: 6.0d
+			y: -0.5d
+			dependencies: ["415CA1D6E735FEC3"]
+			id: "128081472BA423EF"
+			tasks: [{
+				id: "05C1C1C95708A0FE"
+				type: "item"
+				item: "contenttweaker:pebble_hammer"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 0.5d
+			dependencies: ["415CA1D6E735FEC3"]
+			id: "1B2916B7C0F41BE6"
+			tasks: [{
+				id: "009C492AEC8B689D"
+				type: "item"
+				item: "contenttweaker:pebble_shovel"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 1.5d
+			dependencies: ["415CA1D6E735FEC3"]
+			id: "35364D83C2BFB46D"
+			tasks: [{
+				id: "7E94E872A78DCC1C"
+				type: "item"
+				item: "contenttweaker:pebble_axe"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 2.5d
+			dependencies: ["3C91C3BC140187FA"]
+			id: "6EDF7E4CBE4CDF8F"
+			tasks: [{
+				id: "1A3B37C24114FC99"
+				type: "item"
+				item: "botania:living_root"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 5.5d
+			dependencies: [
+				"5052A88D733C2C73"
+				"35364D83C2BFB46D"
+			]
+			id: "6CAE6BF7BBD19DD6"
+			tasks: [{
+				id: "56796A0E10B28E8F"
+				type: "item"
+				item: "minecraft:oak_planks"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 7.0d
+			dependencies: ["6CAE6BF7BBD19DD6"]
+			id: "5D92442BE618263A"
+			tasks: [{
+				id: "0F6A165A80B3AA59"
+				type: "checkmark"
+				title: "软锤"
+			}]
+		}
+		{
+			x: 6.0d
+			y: -1.5d
+			id: "4BB337EEE33CED5B"
+			tasks: [{
+				id: "0B50C784855D7817"
+				type: "item"
+				item: "contenttweaker:pebble_sharp"
+			}]
+		}
+		{
+			x: 7.5d
+			y: -1.5d
+			id: "229DA4181725E550"
+			tasks: [{
+				id: "5C0F707D01000CE7"
+				type: "checkmark"
+				title: "粗石刀"
+			}]
+		}
+		{
+			x: 7.5d
+			y: 5.5d
+			dependencies: [
+				"6CAE6BF7BBD19DD6"
+				"229DA4181725E550"
+			]
+			id: "7C52838A5E1D90FA"
+			tasks: [{
+				id: "6129EDB4E4E113A9"
+				type: "item"
+				item: "minecraft:crafting_table"
+			}]
+		}
+		{
+			x: 9.0d
+			y: 5.5d
+			dependencies: ["7C52838A5E1D90FA"]
+			id: "72CE3B712015CC78"
+			tasks: [{
+				id: "7663FE2215359B5B"
+				type: "item"
+				item: "contenttweaker:carpenter_part"
+			}]
+		}
+		{
+			x: 9.0d
+			y: 7.0d
+			dependencies: [
+				"7C52838A5E1D90FA"
+				"5D92442BE618263A"
+			]
+			id: "333559AC1756BA29"
+			tasks: [{
+				id: "5F84CCAB73EBA547"
+				type: "checkmark"
+				title: "简易木匠工具"
+			}]
+		}
+		{
+			x: 10.5d
+			y: 5.5d
+			dependencies: ["333559AC1756BA29"]
+			id: "5FD2FC2D4C6C60A2"
+			tasks: [{
+				id: "05964E3578F2CDCA"
+				type: "item"
+				item: "artisanworktables:worktable_carpenter"
+			}]
+		}
+		{
+			x: 10.5d
+			y: 8.0d
+			dependencies: ["333559AC1756BA29"]
+			id: "24632D85F8DBA7B0"
+			tasks: [{
+				id: "672D65F30F6EEB11"
+				type: "item"
+				item: "contenttweaker:pebble_sharp_chisel"
+			}]
+		}
+		{
+			x: 10.5d
+			y: 9.0d
+			dependencies: ["333559AC1756BA29"]
+			id: "57636348CC3268AC"
+			tasks: [{
+				id: "0BF998765427EBAD"
+				type: "item"
+				item: "contenttweaker:pebble_sharp_plane"
+			}]
+		}
+		{
+			x: 11.5d
+			y: 7.0d
+			dependencies: ["333559AC1756BA29"]
+			id: "7E8B081F038E9CB4"
+			tasks: [{
+				id: "2350E12EF30CFA8E"
+				type: "checkmark"
+				title: "木质连接件"
+			}]
+		}
+		{
+			x: 13.0d
+			y: 6.0d
+			dependencies: ["7E8B081F038E9CB4"]
+			id: "4EC16F9998A48960"
+			tasks: [{
+				id: "67C008347AEF6046"
+				type: "item"
+				item: "exnihilosequentia:crucible_wood"
+			}]
+		}
+		{
+			x: 13.0d
+			y: 4.5d
+			dependencies: ["7E8B081F038E9CB4"]
+			id: "3FD045EF92430A12"
+			tasks: [{
+				id: "295351D9BC621A3C"
+				type: "item"
+				item: "exnihilosequentia:barrel_wood"
+			}]
+		}
+		{
+			x: 13.0d
+			y: 3.0d
+			dependencies: ["7E8B081F038E9CB4"]
+			id: "42B893809E47D742"
+			tasks: [{
+				id: "1BBB1924F145F8E0"
+				type: "item"
+				item: "exnihilosequentia:sieve"
+			}]
+		}
+		{
+			x: 14.5d
+			y: 6.0d
+			id: "6159F3F90698387A"
+			tasks: [{
+				id: "79E6B3FA7DEBA42C"
+				type: "item"
+				item: {
+					id: "botania:water_bowl"
+					Count: 1b
+					tag: {
+						Fluid: {
+							FluidName: "minecraft:water"
+							Amount: 1000
+						}
+					}
+				}
+			}]
+		}
+	]
+}
